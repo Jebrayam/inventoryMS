@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 
 public class OrderProduct {
     @Id
-    private int id;
+    private Integer id;
     private Order order;
     private Product product;
     private int quantity;

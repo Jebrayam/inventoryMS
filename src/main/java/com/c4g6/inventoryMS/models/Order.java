@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class Order {
     @Id
-    private int id;
+    private Integer id;
     private Date date;
 
     public Order(int id, Date date) {
