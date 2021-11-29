@@ -6,21 +6,21 @@ import java.util.Date;
 
 public class Stock {
     @Id
-    private Product product;
+    private String product;
     private Date updateDate;
     private int quantity;
 
-    public Stock(Product product, Date updateDate, int quantity) {
+    public Stock(String product, Date updateDate, int quantity) {
         this.product = product;
         this.updateDate = updateDate;
         this.quantity = quantity;
     }
 
-    public Product getProduct() {
+    public String getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(String product) {
         this.product = product;
     }
 

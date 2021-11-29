@@ -4,39 +4,29 @@ import org.springframework.data.annotation.Id;
 
 public class OrderProduct {
     @Id
-    private Integer id;
-    private Order order;
-    private Product product;
+    private String id;
+    private String product;
     private int quantity;
 
-    public OrderProduct(int id, Order order, Product product, int quantity) {
+    public OrderProduct(String id, String product, int quantity) {
         this.id = id;
-        this.order = order;
         this.product = product;
         this.quantity = quantity;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Order getOrder() {
-        return order;
-    }
-
-    public void setOrder(Order order) {
-        this.order = order;
-    }
-
-    public Product getProduct() {
+    public String getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(String product) {
         this.product = product;
     }
 
